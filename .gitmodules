@@ -1,0 +1,3 @@
+[submodule "detectors/CLRerNet"]
+	path = detectors/CLRerNet
+	url = https://github.com/hirotomusiker/CLRerNet.git
