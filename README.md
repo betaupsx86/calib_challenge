@@ -1,3 +1,31 @@
+Extrinsic Camera Calibration
+======
+This method estimates camera extrinsic paremeters from the vanishing point in the image.
+The vanishing point is obtained from the intersection of lanes detected by a neural net.
+
+Install
+======
+
+Download [Github CLI](https://github.com/cli/cli?tab=readme-ov-file#installation)
+
+Download lane detector checkpoints
+```
+gh release download v0.1.0 --pattern '*.pth' -R https://github.com/hirotomusiker/CLRerNet/
+```
+Install requirements
+```
+pip install detectors/CLRerNet/libs/models/layers/nms
+```
+```
+pip install -r requirements.txt
+```
+
+Usage
+======
+```
+python3 predict_labels.py --model_config detectors/CLRerNet/configs/clrernet/culane/clrernet_culane_dla34_ema.py --model_checkpoint clrernet_culane_dla34_ema.pth --vid unlabeled/5.hevc --out-dir unlabeled_predicted/
+```
+
 Welcome to the comma.ai Calibration Challenge!
 ======
 
