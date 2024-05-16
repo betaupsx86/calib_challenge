@@ -25,6 +25,7 @@ Usage
 ```
 python3 predict_labels.py --model_config detectors/CLRerNet/configs/clrernet/culane/clrernet_culane_dla34_ema.py --model_checkpoint clrernet_culane_dla34_ema.pth --vid unlabeled/5.hevc --out-dir unlabeled_predicted/
 ```
+![picture](https://raw.githubusercontent.com/betaupsx86/calib_challenge/main/.github/images/vanishing_point.jpg)
 
 Welcome to the comma.ai Calibration Challenge!
 ======
